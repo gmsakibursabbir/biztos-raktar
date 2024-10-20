@@ -6,9 +6,6 @@ module.exports = {
       fontFamily: {
         lexend: ["Lexend", "sans-serif"],
       },
-      letterSpacing: {
-        "2percent": "2%",
-      },
       screens: {
         sm: "640px",
         md: "768px",
@@ -16,6 +13,14 @@ module.exports = {
         xl: "1280px",
         "2xl": "1440px",
         "3xl": "1600px",
+      },
+      colors: {
+        skyBlue: "#257BEB",
+        midnightBlue: "#172C54",
+        deepGray: "#111827",
+        lavenderGray: "#D4D2E3",
+        mutedPurple: "#5D5A88",
+        vibrantOrange: "#EF7C00",
       },
     },
   },
