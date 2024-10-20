@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+  <body class="font-lexend">
+    <!-- top header start -->
+    <section class="bg-midnightBlue hidden md:block">
+      <div
+        class="h-12 max-w-[1440px] px-5 mx-auto flex justify-start items-center space-x-6"
+      >
+        <a
+          href="tel:+36308830991"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+        >
+          <img src="./img/phone.svg" alt="" class="max-h-5 max-w-5 mr-3" />+36
+          30 883 0991</a
+        >
+        <a
+          href="mailto:berles@biztosraktar.hu"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+          ><img
+            src="./img/envelope.svg"
+            alt=""
+            class="max-h-5 max-w-5 mr-3"
+          />berles@biztosraktar.hu</a
+        >
+        <a
+          href="#"
+          class="flex items-center justify-center text-lg text-white leading-6 tracking-wide hover:text-vibrantOrange"
+          ><img src="./img/clock.svg" alt="" class="max-h-5 max-w-5 mr-3" />H–V:
+          0-24</a
+        >
+      </div>
+    </section>
+    <!-- top header end -->
+    <!-- header start -->
+    <header>
+      <div class="max-w-[1440px] px-5 mx-auto">
+        <nav class="flex justify-between items-center py-4 lg:py-7">
+          <!-- Logo -->
+          <a href="./index.html" class="logo-container">
+            <img
+              src="./img/Logo.svg"
+              alt="Logo"
+              class="default-logo w-[70%] lg:w-[90%] xl:w-full"
+            />
+            <img
+              src="./img/Logo-hover.svg"
+              alt="Hover Logo"
+              class="hover-logo w-[70%] lg:w-[90%] xl:w-full"
+            />
+          </a>
+
+          <!-- Hamburger Menu (mobile) -->
+          <input type="checkbox" id="menu-toggle" class="hidden" />
+          <label for="menu-toggle" class="cursor-pointer block lg:hidden">
+            <div class="hamburger">
+              <span class="hamburger-line line-1"></span>
+              <span class="hamburger-line line-2"></span>
+              <span class="hamburger-line line-3"></span>
+            </div>
+          </label>
+
+          <!-- Menu -->
+          <ul
+            class="nav-menu absolute lg:relative left-0 top-16 md:top-[110px] lg:top-auto lg:bg-transparent bg-white shadow-lg lg:shadow-none w-full lg:w-auto text-center lg:flex lg:space-x-10 transition-all duration-500 ease-in-out max-h-0 overflow-hidden lg:max-h-full text-lg text-mutedPurple font-light leading-wide tracking-wide z-50"
+          >
+            <li
+              class="pt-6 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Raktárak</a>
+            </li>
+            <li
+              class="pt-3 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Bérlés</a>
+            </li>
+            <li
+              class="pt-3 pb-3 lg:py-0 mx-auto group flex justify-center items-center lg:hover:border-b-4 hover:border-skyBlue"
+            >
+              <a href="#" class="block md:inline">Kapcsolat</a>
+            </li>
+
+            <li
+              class="pt-3 pb-6 lg:py-0 flex md:flex-row flex-col lg:hidden justify-center gap-3 mx-auto px-5"
+            >
+              <a
+                href="#"
+                class="px-6 h-11 text-base text-skyBlue hover:text-white hover:bg-midnightBlue hover:border-midnightBlue font-medium leading-6 tracking-wide border-skyBlue border-2 rounded-[3px] flex items-center justify-center"
+              >
+                <svg
+                  class="w-4 h-4 mr-3"
+                  viewBox="0 0 16 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                    d="M11.1248 4.92542C11.1248 6.6513 9.72568 8.05042 7.99979 8.05042C6.2739 8.05042 4.87479 6.6513 4.87479 4.92542C4.87479 3.19953 6.2739 1.80042 7.99979 1.80042C9.72568 1.80042 11.1248 3.19953 11.1248 4.92542Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                    d="M1.75073 16.6906C1.80932 13.2895 4.58468 10.5504 7.99979 10.5504C11.415 10.5504 14.1904 13.2896 14.2488 16.6909C12.3465 17.5638 10.2301 18.0504 8.00005 18.0504C5.76978 18.0504 3.6532 17.5637 1.75073 16.6906Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                Belépés
+              </a>
+              <a
+                href="#"
+                class="px-6 h-11 text-base text-white hover:text-white hover:bg-midnightBlue hover:border-midbg-midnightBlue font-medium leading-6 tracking-wide bg-skyBlue border-skyBlue border-2 rounded-[3px] flex items-center justify-center"
+              >
+                Regisztráció
+              </a>
+            </li>
+          </ul>
+
+          <div class="hidden lg:flex space-x-6">
+            <a
+              href="#"
+              class="px-6 h-14 text-lg text-skyBlue font-semibold leading-6 tracking-wide border-skyBlue border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-midnightBlue hover:border-midnightBlue group"
+            >
+              <svg
+                class="w-4 h-4 mr-3"
+                viewBox="0 0 16 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                  d="M11.1248 4.92542C11.1248 6.6513 9.72568 8.05042 7.99979 8.05042C6.2739 8.05042 4.87479 6.6513 4.87479 4.92542C4.87479 3.19953 6.2739 1.80042 7.99979 1.80042C9.72568 1.80042 11.1248 3.19953 11.1248 4.92542Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="stroke-skyBlue group-hover:stroke-white stroke-2 stroke-round"
+                  d="M1.75073 16.6906C1.80932 13.2895 4.58468 10.5504 7.99979 10.5504C11.415 10.5504 14.1904 13.2896 14.2488 16.6909C12.3465 17.5638 10.2301 18.0504 8.00005 18.0504C5.76978 18.0504 3.6532 17.5637 1.75073 16.6906Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Belépés</a
+            >
+            <a
+              href="#"
+              class="px-6 h-14 text-lg text-white font-semibold leading-6 tracking-wide bg-skyBlue border-skyBlue border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-midnightBlue hover:border-midnightBlue"
+              >Regisztráció</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <section class="pt-7 pb-8 lg:pt-10 lg:pb-16 overflow-hidden" id="hero">
+        <div
+          class="px-5 max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-between md:items-center"
+        >
+          <!-- top -->
+          <div
+            class="w-full lg:w-[48%] xl:w-[48%] 2xl:w-[47%] 3xl:w-[55%] relative 3xl:-ml-[8%] lg:pr-9"
+          >
+            <div class="relative w-full h-auto flex justify-end">
+              <!-- First image (smaller size) -->
+              <img
+                src="./img/map.png"
+                alt=""
+                class="w-full lg:w-[80%] xl:w-[85%] 2xl:w-[85%] h-auto"
+              />
+
+              <!-- Second image (overlayed larger image) -->
+              <img
+                src="./img/map-container.png"
+                alt=""
+                class="absolute -top-[2%] right-0 w-full lg:w-[95%] xl:w-[95%] 2xl:w-[95%] h-full z-10"
+              />
+            </div>
+
+            <!-- items 1 -->
+            <a
+              href="#"
+              class="p-4 md:p-5 flex justify-start md:justify-center items-center shadow-md w-[188px] md:w-[228px] h-[66px] md:h-[78px] rounded-3xl absolute top-[10%] left-[10%] sm:top-[10%] sm:left-[10%] md:top-[17%] md:left-[34%] lg:top-[8%] lg:left-[32%] xl:top-[11%] xl:left-[34%] bg-white z-30"
+            >
+              <img
+                src="./img/location.svg"
+                alt=""
+                class="-mt-[14px] md:-mt-[8px] w-5 h-5 md:w-7 md:h-7"
+              />
+              <div class="ml-[6px] md:ml-[10px]">
+                <h3
+                  class="text-base lg:text-lg font-semibold text-skyBlue leading-5 tracking-wide"
+                >
+                  Budapest X.
+                </h3>
+                <p
+                  class="text-sm md:text-base text-mutedPurple leading-6 tracking-wide"
+                >
+                  Keresztúri út 86/C
+                </p>
+              </div>
+            </a>
+            <!-- items 2 -->
+            <a
+              href="#"
+              class="p-4 md:p-5 flex justify-start md:justify-center items-center shadow-md w-[195px] md:w-[236px] h-[66px] md:h-[78px] rounded-3xl absolute top-[35%] left-[38%] md:top-[30%] md:left-[70%] lg:top-[30%] lg:left-[55%] xl:left-[70%] bg-white z-30"
+            >
+              <img
+                src="./img/location.svg"
+                alt=""
+                class="-mt-[14px] md:-mt-[8px] w-5 h-5 md:w-7 md:h-7"
+              />
+              <div class="ml-[6px] md:ml-[10px]">
+                <h3
+                  class="text-base lg:text-lg font-semibold text-skyBlue leading-5 tracking-wide"
+                >
+                  Budapest X.
+                </h3>
+                <p
+                  class="text-sm md:text-base text-mutedPurple leading-6 tracking-wide"
+                >
+                  Keresztúri út 108/C
+                </p>
+              </div>
+            </a>
+            <!-- items 3 -->
+            <a
+              href="#"
+              class="p-4 md:p-5 flex justify-start md:justify-center items-center shadow-md w-[180px] md:w-[210px] h-[66px] md:h-[78px] rounded-3xl absolute top-[75%] left-[2%] sm:top-[73%] sm:left-[3%] md:top-[73%] md:left-[0%] lg:top-[80%] lg:left-[5%] xl:top-[72%] xl:left-[13%] bg-white z-30"
+            >
+              <img
+                src="./img/location.svg"
+                alt=""
+                class="-mt-[14px] md:-mt-[8px] w-5 h-5 md:w-7 md:h-7"
+              />
+              <div class="ml-[6px] md:ml-[10px]">
+                <h3
+                  class="text-base lg:text-lg font-semibold text-skyBlue leading-5 tracking-wide"
+                >
+                  Kápolnásnyék
+                </h3>
+                <p
+                  class="text-sm md:text-base text-mutedPurple leading-6 tracking-wide"
+                >
+                  Olajtelep
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- bottom -->
+          <div class="w-full lg:w-[48%] pt-10 lg:pt-0">
+            <div class="flex flex-col gap-4 md:gap-6">
+              <h2
+                class="text-base md:text-lg text-skyBlue leading-6 tracking-wide"
+              >
+                AUTOMATIZÁLT RAKTÁRBÉRLÉS
+              </h2>
+              <h1
+                class="text-2xl lg:text-[2.5rem] xl:text-5xl font-medium text-[#111827] leading-snug md:leading-6 tracking-wide max-w-full lg:max-w-[550px]"
+              >
+                Őrzött
+                <span class="text-skyBlue">Raktárainkban</span> biztonságban
+                tudhatja értékeit
+              </h1>
+              <p
+                class="lg:max-w-[600px] text-base md:text-lg text-mutedPurple leading-6 tracking-wide"
+              >
+                Több telephelyen is kínálunk raktárbérlési lehetőséget. Az egész
+                folyamatot online, kényelmesen otthonról vagy a mobiljáról is
+                intézheti.
+              </p>
+              <div
+                class="flex justify-center md:justify-start items-center gap-6 md:gap-12 my-4"
+              >
+                <img
+                  src="./img/container.svg"
+                  alt=""
+                  class="w-10 h-10 md:w-12 md:h-12"
+                />
+                <img
+                  src="./img/crain.svg"
+                  alt=""
+                  class="w-10 h-10 md:w-12 md:h-12"
+                />
+                <img
+                  src="./img/time.svg"
+                  alt=""
+                  class="w-10 h-10 md:w-12 md:h-12"
+                />
+              </div>
+              <div class="flex flex-col md:flex-row gap-3 md:gap-6">
+                <a
+                  href="#"
+                  class="px-12 h-14 text-base md:text-lg text-white font-semibold leading-6 tracking-wide bg-skyBlue border-[#257BEB] border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-[#1E478A] hover:border-[#1E478A]"
+                  >Regisztráció<img
+                    src="./img/arrow-right.svg"
+                    alt=""
+                    class="max-w-3 max-h-4 ml-3"
+                /></a>
+                <a
+                  href="#"
+                  class="px-12 h-14 text-base md:text-lg text-skyBlue font-semibold leading-6 tracking-wide bg-transparent border-lavenderGray border-2 rounded-[3px] flex items-center justify-center hover:text-white hover:bg-skyBlue"
+                  >Kapcsolat</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+  </body>
+</html>
